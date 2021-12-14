@@ -7,4 +7,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 5px lightgray;
+}
+header .header__logo {
+  height: 8vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+
 /*# sourceMappingURL=style.css.map */
