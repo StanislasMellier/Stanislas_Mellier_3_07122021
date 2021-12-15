@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,9 +14,37 @@ header {
   box-shadow: 0 5px 5px lightgray;
 }
 header .header__logo {
-  height: 8vw;
-  margin-top: 5vw;
-  margin-bottom: 3vw;
+  height: 8vmin;
+  margin-top: 5vmin;
+  margin-bottom: 3vmin;
+}
+
+footer {
+  padding: 5vmin;
+  color: white;
+  background-color: #353535;
+}
+footer .footer__title {
+  font-size: 1em;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  margin-bottom: 3vmin;
+}
+footer .footer_list {
+  list-style: none;
+  font-size: 1em;
+}
+footer .footer_list li {
+  margin-bottom: 1vmin;
+}
+footer .footer_list li i {
+  min-height: 0;
+  font-size: 0.8em;
+  margin-right: 0.7em;
+}
+footer .footer_list a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
