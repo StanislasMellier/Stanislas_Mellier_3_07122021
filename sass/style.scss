@@ -44,6 +44,7 @@ $bg-darkgrey : #353535;
     &__title {
         font-size: 1em;
         font-weight: 500;
+        white-space: nowrap;
     }
 }
 .introsite {
@@ -74,7 +75,65 @@ $bg-darkgrey : #353535;
         font-size: 1em;
         a{
             text-decoration: none;
+            white-space: nowrap;
             color: white;
+        }
+    }
+}
+.guide {
+    margin: 5vmin 0;
+    padding: 3vmin;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        
+    }
+}
+.guidelist {
+    box-shadow: 0px 5px 5px darken($bg-grey,5);
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    width: 90vmin;
+    height: 20vmin;
+    margin: 3vmin;
+    background-color: $bg-lightgrey;
+    padding-left: 6vmin;
+    &__marker{
+        font-size: 0.9em;
+        position: absolute;
+        left: -3vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6vmin;
+        height: 6vmin;
+        color: white;
+        background: $primary-color;
+        border-radius: 1000px;
+    }
+    i {
+        margin-left: 3vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #808080;
+        font-size: 1.1em;
+        width: 6vmin;
+        height: 6vmin;
+    }
+    &__text {
+        margin-left: 5vmin;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    &--purple {
+        background: lighten($primary-color, 35);
+        i {
+            color: $primary-color;
         }
     }
 }

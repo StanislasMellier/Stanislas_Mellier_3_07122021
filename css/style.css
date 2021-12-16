@@ -35,6 +35,7 @@ header .header__logo {
 .localisation__title {
   font-size: 1em;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .introsite {
@@ -67,7 +68,66 @@ header .header__logo {
 }
 .introsite__link a {
   text-decoration: none;
+  white-space: nowrap;
   color: white;
+}
+
+.guide {
+  margin: 5vmin 0;
+  padding: 3vmin;
+}
+.guide__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.guidelist {
+  box-shadow: 0px 5px 5px #dddddd;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  width: 90vmin;
+  height: 20vmin;
+  margin: 3vmin;
+  background-color: #F6F6F6;
+  padding-left: 6vmin;
+}
+.guidelist__marker {
+  font-size: 0.9em;
+  position: absolute;
+  left: -3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vmin;
+  height: 6vmin;
+  color: white;
+  background: #9356DC;
+  border-radius: 1000px;
+}
+.guidelist i {
+  margin-left: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #808080;
+  font-size: 1.1em;
+  width: 6vmin;
+  height: 6vmin;
+}
+.guidelist__text {
+  margin-left: 5vmin;
+  font-size: 1em;
+  font-weight: 500;
+}
+.guidelist--purple {
+  background: #f2eafb;
+}
+.guidelist--purple i {
+  color: #9356DC;
 }
 
 footer {
