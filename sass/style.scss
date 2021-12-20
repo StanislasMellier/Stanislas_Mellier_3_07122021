@@ -1,3 +1,4 @@
+@use "sass:color";
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ header {
         margin-bottom: 3vmin;
     }
 }
+
 $primary-color : #9356DC;
 $secondary-color : #FF79DA;
 $terciary-color : #99E2D0;
@@ -133,6 +135,74 @@ $bg-darkgrey : #353535;
         i {
             color: $primary-color;
         }
+    }
+}
+.resto {
+    background: $bg-lightgrey;
+    padding: 10vmin 4vmin;
+    &__title {
+        margin-bottom: 4vmin;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.restocard {
+    box-shadow: 0px 5px 5px darken($bg-grey,20);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 4vmin;
+    width: 90vmin;
+    aspect-ratio: 3/2;
+    background: white;
+    margin: 2vmin;
+    &__banner {
+        min-width: 100%;
+        object-fit: cover;
+    }
+    &__caption {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-height: 40%;
+        padding: 4vmin;
+        h2 {
+            margin: 0.5vmin;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+        i {
+            font-size: 7vmin;
+            font-weight: 300;
+            position: absolute;
+            top: 0;
+            right: 6vmin;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__new {
+        position: absolute;
+        top: 4vmin;
+        right: 4vmin;
+        padding: 2vmin 3vmin;
+        border-radius: 1vmin;
+        font-weight: 500;
+        font-size: 3.9vmin;
+        background-color: $terciary-color;
+        color: color.adjust($terciary-color, $lightness : -40);
     }
 }
 
