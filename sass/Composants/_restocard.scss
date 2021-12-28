@@ -1,0 +1,57 @@
+.restocard {
+    @include global-box-shadow;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 4vmin;
+    width: 90vmin;
+    min-height: 0;
+    aspect-ratio: 4/3;
+    background: white;
+    &__banner {
+        min-width: 100%;
+        max-height: 75%;
+        object-fit: cover;
+    }
+    &__caption {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        max-height: 40%;
+        min-height: 25%;
+        padding: 4vmin;
+        h2 {
+            margin: 0.5vmin;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+        i {
+            font-size: 7vmin;
+            font-weight: 300;
+            position: absolute;
+            top: 0;
+            right: 6vmin;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__new {
+        position: absolute;
+        top: 3vmin;
+        right: 3vmin;
+        padding: 2vmin 3vmin;
+        border-radius: 1vmin;
+        font-weight: 500;
+        font-size: 3.9vmin;
+        background-color: $terciary-color;
+        color: color.adjust($terciary-color, $lightness : -40%);
+    }
+}

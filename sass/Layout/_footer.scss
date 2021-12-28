@@ -1,0 +1,28 @@
+@import "../Utils/mixins.scss";
+
+footer {
+    padding: 5vmin;
+    color: white;
+    background-color: $bg-darkgrey;
+    .footer__title {
+        font-size: 1em;
+        margin-bottom: 3vmin;
+        @include font-Shrikhand;
+    }
+    .footer_list {
+        list-style: none;
+        font-size: 1em;
+        li {
+            margin-bottom: 1.5vmin;
+            i {
+                min-height: 0;
+                font-size: 0.8em;
+                margin-right: 0.7em;
+            }
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

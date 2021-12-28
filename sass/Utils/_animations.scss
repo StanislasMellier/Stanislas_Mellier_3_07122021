@@ -1,0 +1,13 @@
+@keyframes loading {
+    0% {
+        transform: translateY(3vmin);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0.5vmin);
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}

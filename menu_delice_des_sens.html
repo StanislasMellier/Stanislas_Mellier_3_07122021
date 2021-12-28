@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Menu - Le délice des sens</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <i class="fas fa-arrow-left header__returnhome"></i>
+        </a>
+        <img class="header__logo" src="./img/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+    </header>
+    <main class="menu-main">
+        <section class="heading">
+            <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Bannière restaurent Le délice des sens" class="heading__banner">
+            <div class="heading__title">
+                <h1>Le délice des sens</h1>
+                <i class="far fa-heart btn-fav"></i>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="menu__part">
+                <h2 class="part__title">Entrées</h2>
+                <div class="part__choicelist">
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Tartare de thon </h3>
+                            <h4 class="choice__desc">Assaisonné au yuzu</h4>
+                            <span class="choice__price">25€</span>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Bouchée de homard croustillant </h3>
+                            <h4 class="choice__desc">Et sa farandole de petits légumes</h4>
+                            <span class="choice__price">35€</span>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Velouté de cèpes </h3>
+                            <h4 class="choice__desc">Aux truffes</h4>
+                            <span class="choice__price">20€</span>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__part">
+                <h2 class="part__title">Plats</h2>
+                <div class="part__choicelist">
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Poulet rôti aux herbes de Provence </h3>
+                            <h4 class="choice__desc">Et sa crème de truffe</h4>
+                            <div class="choice__price">40€</div>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Langouste rôtie </h3>
+                            <h4 class="choice__desc">Et ses légumes de saison</h4>
+                            <div class="choice__price">35€</div>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Côte de boeuf Angus </h3>
+                            <h4 class="choice__desc">Et sa purée de panais</h4>
+                            <div class="choice__price">44€</div>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__part">
+                <h2 class="part__title">Desserts</h2>
+                <div class="part__choicelist">
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Farandole de desserts</h3>
+                            <h4 class="choice__desc">Du chef</h4>
+                            <div class="choice__price">18€</div>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Crème brulée </h3>
+                            <h4 class="choice__desc">Revisitée</h4>
+                            <div class="choice__price">22€</div>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                    <div class="choicelist__choice">
+                        <div class="choice">
+                            <h3 class="choice__name">Tiramisu  </h3>
+                            <h4 class="choice__desc">À la noisette</h4>
+                            <div class="choice__price">23€</div>
+                        </div>
+                        <div class="choiceselect"><i class="fas fa-check-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <button type="submit" class="order__btn btn-link">Commander</button>
+        </section>
+    </main>
+    <footer>
+        <h1 class="footer__title">ohmyfood</h1>
+        <ul class="footer_list">
+            <li><i class="fas fa-utensils"></i>Proposer un restaurent</li>
+            <li><i class="fas fa-hands-helping"></i>Devenir parteniare</li>
+            <li>Mentions légales</li>
+            <li><a href="mailto:">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

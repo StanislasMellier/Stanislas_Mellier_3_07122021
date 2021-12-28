@@ -1,0 +1,22 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include global-box-shadow(10);
+}
+.header{
+    &__returnhome {
+        color: $bg-darkgrey;
+        position: absolute;
+        left: 7vmin;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 5vmin;
+    }
+    &__logo {
+        height: 8vmin;
+        margin-top: 5vmin;
+        margin-bottom: 3vmin;
+    }
+}
