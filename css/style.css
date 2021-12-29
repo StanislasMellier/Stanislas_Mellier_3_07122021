@@ -74,7 +74,7 @@ footer .footer_list a {
 .btn-link {
   display: block;
   border: none;
-  box-shadow: 0px 7px 7px #dddddd;
+  box-shadow: 0px 7px 7px #d1d1d1;
   border-radius: 1000px;
   font-weight: 400;
   font-size: 1em;
@@ -103,6 +103,12 @@ footer .footer_list a {
   aspect-ratio: 4/3;
   background: white;
 }
+@media screen and (min-width: 699px) {
+  .restocard {
+    border-radius: 2.5vmin;
+    width: 50vmin;
+  }
+}
 .restocard__banner {
   min-width: 100%;
   max-height: 75%;
@@ -119,8 +125,12 @@ footer .footer_list a {
   min-height: 25%;
   padding: 4vmin;
 }
+@media screen and (min-width: 699px) {
+  .restocard__caption {
+    padding: 2.5vmin;
+  }
+}
 .restocard__caption h2 {
-  margin: 0.5vmin;
   font-size: 1.1em;
   font-weight: 600;
 }
@@ -138,6 +148,12 @@ footer .footer_list a {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 699px) {
+  .restocard__caption i {
+    font-size: 4vmin;
+    right: 4vmin;
+  }
+}
 .restocard__new {
   position: absolute;
   top: 3vmin;
@@ -148,6 +164,15 @@ footer .footer_list a {
   font-size: 3.9vmin;
   background-color: #99E2D0;
   color: #278870;
+}
+@media screen and (min-width: 699px) {
+  .restocard__new {
+    border-radius: 0.5vmin;
+    top: 2vmin;
+    right: 2vmin;
+    padding: 1vmin 2vmin;
+    font-size: 1em;
+  }
 }
 
 .localisation {
@@ -177,6 +202,11 @@ footer .footer_list a {
   text-align: center;
   padding: 10vmin 0;
 }
+@media screen and (min-width: 699px) {
+  .introsite {
+    padding: 5vmin 0;
+  }
+}
 .introsite__title {
   font-weight: 600;
   max-width: 70%;
@@ -198,6 +228,14 @@ footer .footer_list a {
   margin: 5vmin 0;
   padding: 3vmin;
 }
+.guide__title {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 699px) {
+  .guide__title {
+    margin-left: 3vmin;
+  }
+}
 .guide__list {
   display: flex;
   flex-direction: column;
@@ -217,6 +255,14 @@ footer .footer_list a {
   background-color: #F6F6F6;
   padding-left: 6vmin;
 }
+@media screen and (min-width: 699px) {
+  .guidelist {
+    width: 75vmin;
+    height: 15vmin;
+    margin: 1.5vmin;
+    padding-left: 4vmin;
+  }
+}
 .guidelist__marker {
   font-size: 0.9em;
   position: absolute;
@@ -230,6 +276,13 @@ footer .footer_list a {
   background: #9356DC;
   border-radius: 1000px;
 }
+@media screen and (min-width: 699px) {
+  .guidelist__marker {
+    left: -2vmin;
+    width: 4vmin;
+    height: 4vmin;
+  }
+}
 .guidelist i {
   margin-left: 3vmin;
   display: flex;
@@ -240,10 +293,20 @@ footer .footer_list a {
   width: 6vmin;
   height: 6vmin;
 }
+@media screen and (min-width: 699px) {
+  .guidelist i {
+    font-size: 1.5em;
+  }
+}
 .guidelist__text {
   margin-left: 5vmin;
   font-size: 1em;
   font-weight: 500;
+}
+@media screen and (min-width: 699px) {
+  .guidelist__text {
+    font-size: 1.2em;
+  }
 }
 .guidelist--purple {
   background: #f2eafb;
@@ -256,15 +319,25 @@ footer .footer_list a {
   background: #F6F6F6;
   padding: 10vmin 4vmin;
 }
+@media screen and (min-width: 699px) {
+  .resto {
+    padding: 5vmin 4vmin;
+  }
+}
 .resto__title {
   margin-bottom: 4vmin;
+}
+@media screen and (min-width: 699px) {
+  .resto__title {
+    margin-bottom: 2vmin;
+  }
 }
 .resto__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.resto a {
+.resto__list a {
   text-decoration: none;
   color: initial;
   margin: 2vmin;
@@ -275,6 +348,8 @@ footer .footer_list a {
 }
 
 .heading {
+  max-height: 40vh;
+  overflow: hidden;
   position: relative;
 }
 .heading__banner {
@@ -290,9 +365,15 @@ footer .footer_list a {
   background-color: #F6F6F6;
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.1em;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 699px) {
+  .heading__title {
+    padding-top: 3vmin;
+    border-radius: 10vmin 10vmin 0 0;
+  }
 }
 .heading__title i {
   display: flex;
@@ -307,6 +388,11 @@ footer .footer_list a {
 }
 .menu__part {
   margin: 3vmin;
+}
+@media screen and (min-width: 699px) {
+  .menu__part {
+    margin-bottom: 0;
+  }
 }
 
 .part__title {
@@ -327,6 +413,11 @@ footer .footer_list a {
 .part__choicelist {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 699px) {
+  .part__choicelist {
+    padding: 0 5vmin;
+  }
 }
 
 .choiceselect {
@@ -349,8 +440,6 @@ footer .footer_list a {
 .choicelist__choice {
   animation: loading 2s ease-in-out;
   width: 100%;
-  min-height: 0;
-  aspect-ratio: 5/1;
   max-height: 40vmin;
   overflow: hidden;
   background-color: white;
@@ -359,6 +448,12 @@ footer .footer_list a {
   box-shadow: 0px 7px 7px #eaeaea;
   display: flex;
   flex-direction: row;
+}
+@media screen and (min-width: 699px) {
+  .choicelist__choice {
+    border-radius: 2vmin;
+    margin: 1vmin 0;
+  }
 }
 .choicelist__choice:hover {
   cursor: pointer;
@@ -378,6 +473,11 @@ footer .footer_list a {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+@media screen and (min-width: 699px) {
+  .choice {
+    padding: 2.5vmin;
+  }
 }
 .choice__name {
   font-weight: 500;
@@ -403,7 +503,12 @@ footer .footer_list a {
 .order {
   display: flex;
   justify-content: center;
-  padding: 10vmin 0;
+  padding: 7vmin 0 15vmin;
+}
+@media screen and (min-width: 699px) {
+  .order {
+    padding: 5vmin 0 10vmin;
+  }
 }
 .order__btn {
   cursor: pointer;

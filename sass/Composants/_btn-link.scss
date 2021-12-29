@@ -2,7 +2,7 @@
 .btn-link {
     display: block;
     border: none;
-    @include global-box-shadow(5);
+    @include global-box-shadow(10);
     border-radius: 1000px;
     font-weight: 400;
     font-size: 1em;

@@ -10,3 +10,9 @@
 @mixin global-box-shadow($darkness:0) {
     box-shadow: 0px 7px 7px darken($bg-grey, $darkness);
 }
+
+@mixin desktop {
+    @media screen and (min-width: 699px) {
+        @content;
+    }
+}
