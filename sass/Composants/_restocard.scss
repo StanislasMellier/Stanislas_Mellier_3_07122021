@@ -1,5 +1,5 @@
 .restocard {
-    @include global-box-shadow;
+    @include global-box-shadow(3);
     position: relative;
     overflow: hidden;
     display: flex;

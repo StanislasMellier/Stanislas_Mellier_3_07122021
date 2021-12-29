@@ -25,7 +25,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  box-shadow: 0px 7px 7px #d1d1d1;
+  box-shadow: 0px 3px 3px #c4c4c4;
 }
 
 .header__returnhome {
@@ -93,7 +93,7 @@ footer .footer_list a {
 }
 
 .restocard {
-  box-shadow: 0px 7px 7px #eaeaea;
+  box-shadow: 0px 7px 7px #e2e2e2;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -244,7 +244,7 @@ footer .footer_list a {
 }
 
 .guidelist {
-  box-shadow: 0px 7px 7px #eaeaea;
+  box-shadow: 0px 7px 10px #eaeaea;
   display: flex;
   align-items: center;
   position: relative;
@@ -340,7 +340,7 @@ footer .footer_list a {
 .resto__list a {
   text-decoration: none;
   color: initial;
-  margin: 2vmin;
+  margin: 2.5vmin;
 }
 
 .menu-main {

@@ -2,7 +2,7 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    @include global-box-shadow(10);
+    @include global-box-shadow(15,0px,3px,3px);
 }
 .header{
     &__returnhome {

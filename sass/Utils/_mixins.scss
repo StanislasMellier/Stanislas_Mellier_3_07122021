@@ -7,8 +7,8 @@
     background: linear-gradient(175deg,$secondary-color,$primary-color);
 }
 
-@mixin global-box-shadow($darkness:0) {
-    box-shadow: 0px 7px 7px darken($bg-grey, $darkness);
+@mixin global-box-shadow($darkness: 0, $size-x: 0px, $size-y: 7px, $blur: 7px) {
+    box-shadow: $size-x $size-y $blur darken($bg-grey, $darkness);
 }
 
 @mixin desktop {

@@ -74,7 +74,7 @@
     }
 }
 .guidelist {
-    @include global-box-shadow;
+    @include global-box-shadow($blur:10px);
     display: flex;
     align-items: center;
     position: relative;
@@ -155,7 +155,7 @@
         a {
             text-decoration: none;
             color: initial;
-            margin: 2vmin;
+            margin: 2.5vmin;
         }
     }
 }
