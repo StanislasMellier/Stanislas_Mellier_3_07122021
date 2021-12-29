@@ -21,6 +21,23 @@ body {
     opacity: 1;
   }
 }
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes load-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
 header {
   position: relative;
   display: flex;
@@ -71,6 +88,22 @@ footer .footer_list a {
   text-decoration: none;
 }
 
+.loader {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  animation: loader 100ms forwards 1500ms;
+}
+.loader i {
+  font-size: 20vmin;
+  animation: load-spin 1500ms linear;
+}
+
 .btn-link {
   display: block;
   border: none;
@@ -80,18 +113,31 @@ footer .footer_list a {
   font-size: 1em;
   text-decoration: none;
   color: white;
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: linear-gradient(175deg, #ff79da, #9356dc);
+}
+.btn-link:hover {
+  background: linear-gradient(175deg, #ff8de0, #9e67e0);
+  box-shadow: 0px 7px 7px #aaaaaa;
 }
 
 .btn-fav:hover {
   cursor: pointer;
   font-weight: 900;
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: fav-active 500ms;
 }
 
+@keyframes fav-active {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .restocard {
   box-shadow: 0px 7px 7px #e2e2e2;
   position: relative;
@@ -458,9 +504,13 @@ footer .footer_list a {
 .choicelist__choice:hover {
   cursor: pointer;
 }
+.choicelist__choice:hover .choice {
+  width: 75%;
+  transition: width 1s;
+}
 .choicelist__choice:hover .choiceselect {
   margin-right: 0;
-  transition: all 1s;
+  transition: margin-right 1s;
 }
 .choicelist__choice:hover .choiceselect > i {
   transform: rotate(360deg);
@@ -473,6 +523,7 @@ footer .footer_list a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: width 1s;
 }
 @media screen and (min-width: 699px) {
   .choice {
@@ -483,21 +534,25 @@ footer .footer_list a {
   font-weight: 500;
   font-size: 1.1em;
   margin-bottom: 1vmin;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .choice__desc {
   font-weight: 300;
   font-size: 1em;
-  white-space: nowrap;
   margin-top: 1vmin;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 85%;
 }
 .choice__price {
   font-size: 1em;
   font-weight: 500;
   position: absolute;
   bottom: 3vmin;
-  right: 0vmin;
-  background: white;
-  padding: 0 6vmin 0 2vmin;
+  right: 6vmin;
 }
 
 .order {

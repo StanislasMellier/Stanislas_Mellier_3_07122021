@@ -1,10 +1,11 @@
+@use "sass:color";
 @mixin font-Shrikhand {
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
 }
 
-@mixin bg-gradiant {
-    background: linear-gradient(175deg,$secondary-color,$primary-color);
+@mixin bg-gradiant($adjust-lightness: 0%) {
+    background: linear-gradient(175deg,color.adjust($secondary-color, $lightness: $adjust-lightness),color.adjust($primary-color, $lightness: $adjust-lightness));
 }
 
 @mixin global-box-shadow($darkness: 0, $size-x: 0px, $size-y: 7px, $blur: 7px) {

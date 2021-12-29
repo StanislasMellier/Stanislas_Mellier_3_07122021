@@ -1,0 +1,17 @@
+@import "../Utils/variables";
+
+.loader {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    i {
+        font-size: 20vmin;
+        animation: load-spin $loader-time linear;
+    }
+    animation: loader 100ms forwards $loader-time;
+}

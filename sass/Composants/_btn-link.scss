@@ -9,4 +9,8 @@
     text-decoration: none;
     color: white;
     @include bg-gradiant;
+    &:hover {
+        @include bg-gradiant(4%);
+        @include global-box-shadow(25);
+    }
 }
